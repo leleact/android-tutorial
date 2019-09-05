@@ -1,2 +1,2 @@
 include ':app', ':activity_cycle'
-rootProject.name='DrawerLayoutExample'
+rootProject.name='android-tutorial'
