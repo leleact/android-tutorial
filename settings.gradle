@@ -1,2 +1,2 @@
-include ':app', ':activity_cycle'
-rootProject.name='android-tutorial'
+include ':activity_cycle', ':menu_navigation'
+rootProject.name = 'android-tutorial'
