@@ -1,2 +1,2 @@
-include ':activity_cycle', ':menu_navigation'
+include ':activity_cycle', ':menu_navigation', ':style_diff'
 rootProject.name = 'android-tutorial'
