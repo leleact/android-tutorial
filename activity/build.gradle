@@ -2,5 +2,4 @@ android {
     defaultConfig {
         applicationId "com.github.leleact.android.activity"
     }
-
 }

@@ -4,9 +4,8 @@ android {
         applicationId "com.github.leleact.drawerlayout"
         minSdkVersion 26
     }
-
 }
 
 dependencies {
-    implementation "androidx.drawerlayout:drawerlayout:1.0.0"
+    implementation 'androidx.drawerlayout:drawerlayout:1.1.1'
 }
