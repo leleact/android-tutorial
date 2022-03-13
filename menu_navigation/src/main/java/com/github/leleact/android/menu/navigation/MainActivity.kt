@@ -4,8 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import kotlinx.android.synthetic.main.activity_main.*
-
+import androidx.drawerlayout.widget.DrawerLayout
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolBar)
         val actionBar = supportActionBar
         actionBar?.setDisplayHomeAsUpEnabled(true)
-
+        val drawer = findViewById<DrawerLayout>(R.id.drawer)
         mDrawerToggle = ActionBarDrawerToggle(
             this,
             drawer,
