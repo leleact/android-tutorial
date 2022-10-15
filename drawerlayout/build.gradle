@@ -4,6 +4,7 @@ android {
         applicationId "com.github.leleact.drawerlayout"
         minSdkVersion 26
     }
+    namespace 'com.github.leleact.drawerlayout'
 }
 
 dependencies {

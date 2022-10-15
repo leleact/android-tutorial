@@ -3,4 +3,5 @@ android {
     defaultConfig {
         applicationId "com.github.leleact.android.activity.cycle"
     }
+    namespace 'com.github.leleact.android.activity.cycle'
 }

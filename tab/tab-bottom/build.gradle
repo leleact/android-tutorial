@@ -4,6 +4,7 @@ android {
         minSdkVersion 26
 
     }
+    namespace 'com.github.leleact.android.tab.bottom'
 
 }
 

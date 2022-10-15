@@ -1,4 +1,5 @@
 android {
     defaultConfig {
     }
+    namespace 'com.github.leleact.android.tab'
 }

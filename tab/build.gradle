@@ -4,6 +4,7 @@ android {
         applicationId "com.github.leleact.android.tab"
         minSdkVersion 28
     }
+    namespace 'com.github.leleact.android.tab'
 
 }
 
