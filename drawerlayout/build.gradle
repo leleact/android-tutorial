@@ -2,7 +2,6 @@ android {
 
     defaultConfig {
         applicationId "com.github.leleact.drawerlayout"
-        minSdkVersion 26
     }
     namespace 'com.github.leleact.drawerlayout'
 }

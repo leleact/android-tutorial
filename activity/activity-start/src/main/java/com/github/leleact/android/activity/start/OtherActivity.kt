@@ -1,8 +1,7 @@
 package com.github.leleact.android.activity.start
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 
 class OtherActivity : AppCompatActivity() {
 
