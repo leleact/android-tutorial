@@ -1,5 +1,6 @@
 android {
     defaultConfig {
+        applicationId "com.github.leleact.android.activity"
     }
-    namespace 'com.github.leleact.android.tab'
+    namespace 'com.github.leleact.android.activity'
 }

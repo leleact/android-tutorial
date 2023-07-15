@@ -12,7 +12,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 
 class MainActivity : AppCompatActivity() {
 
-    val tag = MainActivity::class.java.simpleName
+    val tag: String? = MainActivity::class.java.simpleName
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
