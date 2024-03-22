@@ -39,6 +39,7 @@ subprojects {
             targetSdkVersion 34
             versionCode 1
             versionName "1.0"
+            minSdk 19
             testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         }
 
