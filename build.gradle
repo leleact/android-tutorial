@@ -8,7 +8,7 @@ buildscript {
 
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.1.2'
+        classpath 'com.android.tools.build:gradle:8.3.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -22,8 +22,8 @@ allprojects {
     }
 }
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
+tasks.register('clean', Delete) {
+    delete rootProject.getLayout().getBuildDirectory()
 }
 
 
@@ -36,7 +36,6 @@ subprojects {
         compileSdkVersion 34
 
         defaultConfig {
-            minSdkVersion 28
             targetSdkVersion 34
             versionCode 1
             versionName "1.0"
@@ -68,7 +67,7 @@ subprojects {
         implementation fileTree(dir: 'libs', include: ['*.jar'])
         implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
         implementation 'androidx.appcompat:appcompat:1.6.1'
-        implementation 'androidx.core:core-ktx:1.10.1'
+        implementation 'androidx.core:core-ktx:1.12.0'
         implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
         testImplementation 'junit:junit:4.13.2'
         androidTestImplementation 'androidx.test:runner:1.5.2'

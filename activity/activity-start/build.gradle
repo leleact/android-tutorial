@@ -1,6 +1,7 @@
 android {
 
     defaultConfig {
+        minSdk 30
         applicationId "com.github.leleact.android.activity.start"
     }
     namespace 'com.github.leleact.android.activity.start'
