@@ -1,8 +1,7 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    ext.kotlin_version = '1.9.0'
-    ext.compose_version = '1.5.14'
+    ext.kotlin_version = '1.9.24'
     repositories {
         google()
         mavenCentral()
@@ -92,9 +91,7 @@ subprojects {
         implementation 'androidx.appcompat:appcompat:1.7.0'
         implementation 'androidx.core:core-ktx:1.13.1'
         implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-        implementation "androidx.ui:ui-tooling:$compose_version"
-        implementation "androidx.compose.runtime:runtime:$compose_version"
-        implementation "androidx.compose.compiler:compiler:$compose_version"
+        implementation "androidx.compose.runtime:runtime:1.6.8"
         testImplementation 'junit:junit:4.13.2'
         androidTestImplementation 'androidx.test:runner:1.6.1'
         androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
