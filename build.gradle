@@ -8,7 +8,7 @@ buildscript {
 
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.9.1'
+        classpath 'com.android.tools.build:gradle:8.10.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -72,16 +72,16 @@ subprojects {
         }
 
         compileOptions {
-            sourceCompatibility JavaVersion.VERSION_17
-            targetCompatibility JavaVersion.VERSION_17
+            sourceCompatibility JavaVersion.VERSION_21
+            targetCompatibility JavaVersion.VERSION_21
         }
 
         kotlin {
-            jvmToolchain(17)
+            jvmToolchain(21)
         }
 
         kotlinOptions {
-            jvmTarget = '17'
+            jvmTarget = '21'
         }
     }
 
@@ -89,9 +89,9 @@ subprojects {
         implementation fileTree(dir: 'libs', include: ['*.jar'])
         implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
         implementation 'androidx.appcompat:appcompat:1.7.0'
-        implementation 'androidx.core:core-ktx:1.15.0'
+        implementation 'androidx.core:core-ktx:1.16.0'
         implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
-        implementation "androidx.compose.runtime:runtime:1.7.8"
+        implementation "androidx.compose.runtime:runtime:1.8.1"
         testImplementation 'junit:junit:4.13.2'
         androidTestImplementation 'androidx.test:runner:1.6.2'
         androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
