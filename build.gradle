@@ -1,15 +1,16 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    ext.kotlin_version = '1.9.24'
+    ext.kotlin_version = '2.1.20'
     repositories {
         google()
         mavenCentral()
 
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.10.0'
+        classpath 'com.android.tools.build:gradle:8.11.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'org.jetbrains.kotlin:compose-compiler-gradle-plugin:2.1.20'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -30,6 +31,7 @@ tasks.register('clean', Delete) {
 subprojects {
     apply plugin: 'com.android.application'
     apply plugin: 'kotlin-android'
+    apply plugin: 'org.jetbrains.kotlin.plugin.compose'
     android {
 
         defaultConfig {
@@ -49,10 +51,10 @@ subprojects {
     }
 
     android {
-        compileSdkVersion 35
+        compileSdkVersion 36
 
         defaultConfig {
-            targetSdkVersion 35
+            targetSdkVersion 36
             versionCode 1
             versionName "1.0"
             minSdk 21
@@ -88,10 +90,10 @@ subprojects {
     dependencies {
         implementation fileTree(dir: 'libs', include: ['*.jar'])
         implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-        implementation 'androidx.appcompat:appcompat:1.7.0'
+        implementation 'androidx.appcompat:appcompat:1.7.1'
         implementation 'androidx.core:core-ktx:1.16.0'
         implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
-        implementation "androidx.compose.runtime:runtime:1.8.1"
+        implementation "androidx.compose.runtime:runtime:1.8.3"
         testImplementation 'junit:junit:4.13.2'
         androidTestImplementation 'androidx.test:runner:1.6.2'
         androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
