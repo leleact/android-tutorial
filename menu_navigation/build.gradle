@@ -1,9 +1,9 @@
 android {
     defaultConfig {
-        multiDexEnabled true
+        multiDexEnabled = true
         applicationId "com.github.leleact.android.menu.navigation"
     }
-    namespace 'com.github.leleact.android.menu.navigation'
+    namespace = 'com.github.leleact.android.menu.navigation'
 }
 
 dependencies {

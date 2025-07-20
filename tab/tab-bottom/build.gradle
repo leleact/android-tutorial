@@ -2,7 +2,7 @@ android {
     defaultConfig {
         applicationId "com.github.leleact.android.tab.bottom"
     }
-    namespace 'com.github.leleact.android.tab.bottom'
+    namespace = 'com.github.leleact.android.tab.bottom'
 
 }
 
