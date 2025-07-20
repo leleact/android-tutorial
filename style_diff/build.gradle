@@ -1,7 +1,0 @@
-android {
-    defaultConfig {
-        applicationId "com.github.leleact.android"
-    }
-    namespace = 'com.github.leleact.android'
-}
-
